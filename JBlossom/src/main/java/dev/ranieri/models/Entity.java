@@ -10,7 +10,7 @@ public class Entity {
 	private String cname;
 	
 	//Holds the no args constructor
-	private String constrcutor;
+	private String constructor;
 	
 	// holds the getters
 	private List<String> getters;
@@ -33,12 +33,12 @@ public class Entity {
 		this.cname = cname;
 	}
 
-	public String getConstrcutor() {
-		return constrcutor;
+	public String getConstructor() {
+		return constructor;
 	}
 
-	public void setConstrcutor(String constrcutor) {
-		this.constrcutor = constrcutor;
+	public void setConstructor(String constructor) {
+		this.constructor = constructor;
 	}
 
 	public List<String> getGetters() {
@@ -67,7 +67,7 @@ public class Entity {
 
 	@Override
 	public String toString() {
-		return "Entity [cname=" + cname + ", constrcutor=" + constrcutor + ", getters=" + getters + ", setters="
+		return "Entity [cname=" + cname + ", constructor=" + constructor + ", getters=" + getters + ", setters="
 				+ setters + ", toStringMethod=" + toStringMethod + "]";
 	}
 	
