@@ -1,22 +1,18 @@
 package dev.ranieri.models;
 
 import java.util.List;
-import java.util.Set;
 
 public class Entity {
 
 	
 	// Holds the class name
-	private String cname;
+	private String className;
 	
 	//Holds the no args constructor
 	private String constructor;
-	
-	// holds the getters
-	private List<String> getters;
-	
-	// holds the setters
-	private List<String> setters;
+
+	//Holds class fields
+	private List<Field> fields;
 	
 	// To string method
 	private String toStringMethod;
@@ -25,12 +21,12 @@ public class Entity {
 		super();
 	}
 
-	public String getCname() {
-		return cname;
+	public String getClassName() {
+		return className;
 	}
 
-	public void setCname(String cname) {
-		this.cname = cname;
+	public void setClassName(String className) {
+		this.className = className;
 	}
 
 	public String getConstructor() {
@@ -39,22 +35,6 @@ public class Entity {
 
 	public void setConstructor(String constructor) {
 		this.constructor = constructor;
-	}
-
-	public List<String> getGetters() {
-		return getters;
-	}
-
-	public void setGetters(List<String> getters) {
-		this.getters = getters;
-	}
-
-	public List<String> getSetters() {
-		return setters;
-	}
-
-	public void setSetters(List<String> setters) {
-		this.setters = setters;
 	}
 
 	public String getToStringMethod() {
@@ -67,8 +47,16 @@ public class Entity {
 
 	@Override
 	public String toString() {
-		return "Entity [cname=" + cname + ", constructor=" + constructor + ", getters=" + getters + ", setters="
-				+ setters + ", toStringMethod=" + toStringMethod + "]";
+		return "Entity [className=" + className + ", constructor=" + constructor + ", getters=" + ", setters="
+				 + ", toStringMethod=" + toStringMethod + "]";
+	}
+
+	public List<Field> getFields() {
+		return fields;
+	}
+
+	public void setFields(List<Field> fields) {
+		this.fields = fields;
 	}
 	
 }
